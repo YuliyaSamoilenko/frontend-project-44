@@ -2,7 +2,7 @@
 
 console.log("Welcome to the Brain Games!");
 
-import name from '../src/cli.js';
+import userName from '../src/cli.js';
 
 
 
