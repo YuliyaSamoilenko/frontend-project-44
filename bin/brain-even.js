@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
-import number from "../src/even";
+import {user, brainEven} from "../src/even.js";
 
-number()
+user();
+
+brainEven();

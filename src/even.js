@@ -1,27 +1,27 @@
 import readlineSync from 'readline-sync';
 
-let number = () => {
-    let answer = readlineSync.question('Answer "yes" if the number is even, otherwise answer "no".');
-    
-    const max = 100;
-    
-    number = Math.floor(Math.random(max) * max) 
-        if (number % 2 == 0 && answer == "yes" || number % 2 != 0 && answer == "no") {
-            result = "Correct!"
-        };
-        if (number % 2 == 0 && answer == "no") {
-            result = " 'no' is wrong answer ;(. Correct answer was 'yes'. Let's try again, Bill! ";
-            return result;
-        };
-        if (number % 2 != 0 && answer == "yes") {
-            result = " 'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, Bill! ";
-            return result;
-        };
-    
+export const user = () => {
+	const userName = readlineSync.question('Welkome to the Brain Games!\nMay I have your name?');
+	console.log('Hello, ' + userName + '!');
+	};
 
-    console.log('Question:' + number);
-    console.log('Your answer' + answer);
-    console.log(result);
-    alert('Congratulations, Bill!')
-};
-export default number;
+const random = (max) => {
+	return Math.floor(Math.random() * max);
+	};
+
+export const brainEven = () => {
+	console.log('Answer "yes" if the number is even, otherwise answer "no".');
+	for (let i = 0; i < 3; i++) {
+		const number = random(100);
+		console.log('Question: ' + number);
+		const answer = readlineSync.question('Your answer: ');
+		if (number % 2 == 0 && answer == 'yes' || number % 2 != 0 && answer == 'no') {
+			console.log('Correct!')
+			} else {
+				const incorrect = (answer == 'yes' ? 'no': 'yes');
+				result = `${answer} is wrong answer ;(. Correct answer was ${incorrect}. \n Let's try again, ${userName}!`;
+				return result;
+				}
+		console.log('Congratulations, ' + userName + '!');
+		}
+	};
