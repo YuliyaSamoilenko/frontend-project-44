@@ -24,8 +24,9 @@ export const brainEven = () => {
 			} else {
 				const incorrect = (answer == 'yes' ? 'no': 'yes');
 				
-				result = `${answer} is wrong answer ;(. Correct answer was ${incorrect}. \n Let's try again, ${userName}!`;
-				return result;
+				const result = (answer + " is wrong answer ;(. Correct answer was" + incorrect + ". \n Let's try again, " + userName + "!");
+				console.log(result);
+				break;
 				};
 		console.log('Congratulations, ' + userName + '!');
 		}
