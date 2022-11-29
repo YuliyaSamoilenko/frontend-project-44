@@ -4,6 +4,4 @@ import {greeting, brainEven} from "../src/even.js";
 
 greeting();
 
-
-
 brainEven();
