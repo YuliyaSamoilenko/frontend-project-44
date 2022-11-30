@@ -9,17 +9,17 @@ const random = (max) => {
 	        return Math.floor(Math.random() * max);
 	        };
 
-const operatorArray = ['+', '-', '*'] => {
+const operatorArray['+', '-', '*'] {
 	const index = Math.floor(Math.random()*operatorArray.length);
 	const operator = operatorArray[index];
 	return Number(operator);
-}
+};
 
 export const brainCalc = () => {
 	        const userName = readlineSync.question('May I have your name?  ');
 	                console.log('Hello, ' + userName + '!');
 
-	        console.log('What is the result of the expression?);
+	        console.log('What is the result of the expression?');
 
 	        for (let i = 0; i < 3; i++) {
 			const number1 = random(10);
@@ -30,7 +30,6 @@ export const brainCalc = () => {
 			if (answer = result)  {
 				console.log('Correct!')
 				} else {
-					const incorrect = (answer == result ? 'no': 'yes');
 					const result = (answer + " is wrong answer ;(. Correct answer was" + result + ". \n Let's try again, " + userName + "!");
 					console.log(result);
 					break;
