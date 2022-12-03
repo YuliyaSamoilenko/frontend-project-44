@@ -22,13 +22,23 @@ export const brainCalc = () => {
   for (let i = 0; i < 3; i++) {
     const number1 = random(10)
     const number2 = random(10)
-    const result = `${number1} ${Number(operator)} ${number2}`
-    console.log('Question: ' + number1 + Number(operator) + number2)
+    console.log('Question: ' + number1 + getRandomOperator + number2)
     const answer = readlineSync.question('Your answer: ')
-    if (answer === result) {
+    switch (getRandomOperator) {
+      case "+":
+        colculation = number1 + number2;
+        break;
+        case "-":
+          colculation = number1 - number2;
+          break;
+          case "*":
+            colculation = number1 * number2;
+            break;
+    }
+    if (answer === colculation) {
       console.log('Correct!')
     } else {
-      const result = `${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${userName}!`
+      const result = `${answer} is wrong answer ;(. Correct answer was ${colculation}.\nLet's try again, ${userName}!`
       console.log(result)
       break
     }
