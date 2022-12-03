@@ -9,11 +9,11 @@ const random = (max) => {
 }
 
 const getRandomOperator = () => {
-  const operatorArray = ['+', '-', '*']
-  const index = Math.floor(Math.random() * operatorArray.length)
-  let operator = operatorArray[index]
-  return operator
-}
+    const operatorArray = ['+', '-', '*']
+    const index = Math.floor(Math.random() * operatorArray.length)
+    let operator = operatorArray[index]
+    return operator
+  }
 
 export const brainCalc = () => {
   const userName = readlineSync.question('May I have your name?  ')
@@ -22,9 +22,11 @@ export const brainCalc = () => {
   for (let i = 0; i < 3; i++) {
     const number1 = random(10)
     const number2 = random(10)
-    console.log('Question: ' + number1 + getRandomOperator + number2)
+    let colculation = 0
+    const selectedOperator = getRandomOperator()
+    console.log(`Question: ${number1} ${selectedOperator} ${number2}`)
     const answer = readlineSync.question('Your answer: ')
-    switch (getRandomOperator) {
+    switch (selectedOperator) {
       case "+":
         colculation = number1 + number2;
         break;
@@ -35,11 +37,11 @@ export const brainCalc = () => {
             colculation = number1 * number2;
             break;
     }
-    if (answer === colculation) {
+    if (Number(answer) === colculation) {
       console.log('Correct!')
     } else {
-      const result = `${answer} is wrong answer ;(. Correct answer was ${colculation}.\nLet's try again, ${userName}!`
-      console.log(result)
+      const incorrect = `${answer} is wrong answer ;(. Correct answer was ${colculation}.\nLet's try again, ${userName}!`
+      console.log(incorrect)
       break
     }
     console.log('Congratulations, ' + userName + '!')
