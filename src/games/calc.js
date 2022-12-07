@@ -1,41 +1,38 @@
-import readlineSync from 'readline-sync'
+import getGame from "../index.js"
 
-import {random, name} from "./index.js"
+import {randomNumber} from "../index.js"
 
+const taskGame = 'What is the result of the expression?'
+             
 const getRandomOperator = () => {
     const operatorArray = ['+', '-', '*']
     const index = Math.floor(Math.random() * operatorArray.length)
-    let operator = operatorArray[index]
-    return operator
+    let selectedOperator = operatorArray[index]
+    return selectedOperator
   }
 
-export const brainCalc = () => {
-  console.log('What is the result of the expression?')
-  for (let i = 0; i < 3; i++) {
-    const number1 = random(10)
-    const number2 = random(10)
-    let calculation = 0
-    const selectedOperator = getRandomOperator()
-    console.log(`Question: ${number1} ${selectedOperator} ${number2}`)
-    const answer = readlineSync.question('Your answer: ')
-    switch (selectedOperator) {
-      case "+":
-        calculation = number1 + number2;
-        break;
+const calculation = (number1, number2, operator) => {
+  switch (operator) {
+    case "+":
+      return number1 + number2
         case "-":
-          calculation = number1 - number2;
-          break;
+        return number1 - number2;
           case "*":
-            calculation = number1 * number2;
-            break;
-    }
-    if (Number(answer) === calculation) {
-      console.log('Correct!')
-    } else {
-      const incorrect = `${answer} is wrong answer ;(. Correct answer was ${calculation}.\nLet's try again, ${name()}!`
-      console.log(incorrect)
-      break
-    }
-    console.log(`Congratulations, ${name()}!`)
+          return number1 * number2;
   }
 }
+
+const roundGame = () => {
+  const number1 = randomNumber(10)
+  const number2 = randomNumber(10)
+  const operator = getRandomOperator()
+  const question = `${number1} ${operator} ${number2}`
+  const answer = calculation(number1, number2, operator)
+  return [question, answer]  
+}
+
+export default () => {
+  getGame(taskGame, roundGame)
+}
+    
+
