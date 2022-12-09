@@ -5,18 +5,19 @@ import {randomNumber} from "../index.js"
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const calculation = (number) => {
-    for (let i = 2; i < number; i++)
-    if (number !== 2 && number % i === 0) {
+    for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
 return 'no'
-} else {
+}
+}
     return 'yes'
 }
-}
+
 
 const roundGame = () => { 
     const number = Math.abs(randomNumber(100))
     const question = number
-    const answer = calculation()
+    const answer = String(calculation(number))
     return [question, answer]
 }  
 
