@@ -7,7 +7,7 @@ const taskGame = 'What number is missing in the progression?'
 const arithmProgression = (number1, quantityNumber, step) => {
     
     const arithmProgressionArray = []
-    for (let i = 0; i <= quantityNumber; i ++) {
+    for (let i = 1; i <= quantityNumber; i ++) {
         const number = number1 + (step * i)
         arithmProgressionArray.push(number)
     }
