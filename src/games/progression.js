@@ -4,7 +4,7 @@ import { randomNumber } from "../index.js";
 
 const taskGame = 'What number is missing in the progression?'
 
-const arithmProgression = (number1, step) => {
+const arithmProgression = (number1, quantityNumber, step) => {
     
     const arithmProgressionArray = []
     for (let i = 0; i <= quantityNumber; i ++) {
@@ -19,7 +19,7 @@ const roundGame = () => {
     const number1 = Math.abs(randomNumber(10))
     const step = Math.abs(randomNumber(10))
     const quantityNumber = Math.abs(randomNumber(5) + 5)
-    const arithmProgressionArray = arithmProgression(number1, step)
+    const arithmProgressionArray = arithmProgression(number1, quantityNumber, step)
     const unkownMemberIndex = Math.abs(randomNumber(10))
     const answer = arithmProgressionArray[unkownMemberIndex]
     arithmProgressionArray[unkownMemberIndex] = '..'
