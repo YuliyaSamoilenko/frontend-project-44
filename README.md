@@ -9,7 +9,6 @@
 
 [brain-gcd](https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2)<a href="https://asciinema.org/a/544028" target="_blank"><img src="https://asciinema.org/a/544028.svg" /></a>
 
-[brain-progression](https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2)
-<a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a>
+[brain-progression](https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2)<a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a>
 
 [brain-prime](https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2)<a href="https://asciinema.org/a/544887" target="_blank"><img src="https://asciinema.org/a/544887.svg" /></a>
