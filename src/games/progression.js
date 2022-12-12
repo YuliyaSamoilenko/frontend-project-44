@@ -20,9 +20,9 @@ const roundGame = () => {
     const step = Math.abs(randomNumber(10))
     const quantityNumber = Math.abs(randomNumber(5) + 5)
     const unkownMemberIndex = Math.abs(randomNumber(5) + 4)
-    arithmProgressionArray[unkownMemberIndex] = '..'
+   
     const arithmProgressionArray = arithmProgression(number1, quantityNumber, step)
-    
+    arithmProgressionArray[unkownMemberIndex] = '..'
     const question = arithmProgressionArray.join(' ')
     const answer = arithmProgressionArray[unkownMemberIndex]
     return [question, answer]
