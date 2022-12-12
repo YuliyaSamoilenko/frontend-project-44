@@ -7,7 +7,7 @@ const taskGame = 'What number is missing in the progression?'
 const arithmProgression = (number1, step) => {
     
     const arithmProgressionArray = []
-    for (let i = 0; i <= 10; i ++) {
+    for (let i = 0; i <= quantityNumber; i ++) {
         const number = number1 + step * i
         arithmProgressionArray.push(number)
         
@@ -18,11 +18,12 @@ const arithmProgression = (number1, step) => {
 const roundGame = () => {
     const number1 = Math.abs(randomNumber(10))
     const step = Math.abs(randomNumber(10))
+    const quantityNumber = Math.abs(randomNumber(5) + 5)
     const arithmProgressionArray = arithmProgression(number1, step)
     const unkownMemberIndex = Math.abs(randomNumber(10))
     const answer = arithmProgressionArray[unkownMemberIndex]
     arithmProgressionArray[unkownMemberIndex] = '..'
-    const question = arithmProgressionArray.join('  ')
+    const question = arithmProgressionArray.join(' ')
     
     return [question, answer]
 }
