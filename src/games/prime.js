@@ -3,7 +3,7 @@ import getGame, { getRandomNumber } from '../index.js';
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const calculation = (number) => {
-  if (number <=1) {
+  if (number <= 1) {
     return false;
   }
   for (let i = 2; i < number; i += 1) {
