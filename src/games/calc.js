@@ -9,7 +9,6 @@ const getRandomOperator = () => {
 };
 
 const calculation = (number1, number2, operator) => {
-  const result = 0;
   switch (operator) {
     case '+':
       result = number1 + number2;
