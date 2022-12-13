@@ -5,18 +5,20 @@ const getRandomOperator = () => {
   const operatorArray = ['+', '-', '*'];
   const index = Math.floor(Math.random() * operatorArray.length);
   const selectedOperator = operatorArray[index];
-    return selectedOperator;
+  return selectedOperator;
 };
 
 const calculation = (number1, number2, operator) => {
+  const result = 0;
   switch (operator) {
     case '+':
-      return number1 + number2;
+      result = number1 + number2;
     case '-':
-      return number1 - number2;
+      result = number1 - number2;
     case '*':
-      return number1 * number2;
+      result = number1 * number2;
   }
+  return result;
 };
 
 const roundGame = () => {

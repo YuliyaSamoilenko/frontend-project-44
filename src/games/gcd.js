@@ -6,7 +6,7 @@ const calculation = (number1, number2) => {
   if (number2 === 0) {
     return number1;
   }
-    return calculation(number2, number1 % number2);
+  return calculation(number2, number1 % number2);
 };
 
 const roundGame = () => {
