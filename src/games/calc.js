@@ -9,16 +9,14 @@ const getRandomOperator = () => {
 };
 
 const calculation = (number1, number2, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = number1 + number2;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
+      return number1 * number2;
   }
-  return result;
 };
 
 const roundGame = () => {
