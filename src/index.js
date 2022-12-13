@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const randomNumber = (max) => {
+export const getRandomNumber = (max) => {
   return Math.floor(Math.random() * max);
 };
 
