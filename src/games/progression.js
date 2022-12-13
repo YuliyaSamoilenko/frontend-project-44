@@ -22,8 +22,8 @@ const roundGame = () => {
   const answer = arithmProgressionArray[unkownMemberIndex];
   arithmProgressionArray[unkownMemberIndex] = '..';
   const question = arithmProgressionArray.join(' ');
-    return [question, answer];
-}
+  return [question, answer];
+};
 
 export default () => {
   getGame(taskGame, roundGame);

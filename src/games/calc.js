@@ -1,24 +1,23 @@
 import getGame from '../index.js';
 import { randomNumber } from '../index.js';
 
-const taskGame = 'What is the result of the expression?';
-             
+const taskGame = 'What is the result of the expression?';             
 const getRandomOperator = () => {
-    const operatorArray = ['+', '-', '*'];
-    const index = Math.floor(Math.random() * operatorArray.length);
-    let selectedOperator = operatorArray[index];
+  const operatorArray = ['+', '-', '*'];
+  const index = Math.floor(Math.random() * operatorArray.length);
+  const selectedOperator = operatorArray[index];
     return selectedOperator;
-  };
+};
 
 const calculation = (number1, number2, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return number1 + number2;
-        case "-":
-        return number1 - number2;
-          case "*":
-          return number1 * number2;
-  };
+    case '-':
+      return number1 - number2;
+    case '*':
+      return number1 * number2;
+  }
 };
 
 const roundGame = () => {
@@ -33,5 +32,3 @@ const roundGame = () => {
 export default () => {
   getGame(taskGame, roundGame);
 };
-    
-

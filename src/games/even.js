@@ -1,6 +1,6 @@
 import getGame from '../index.js';
 
-import {randomNumber} from '../index.js';
+import { randomNumber } from '../index.js';
 
 const even = (number) => number % 2 === 0;
 
