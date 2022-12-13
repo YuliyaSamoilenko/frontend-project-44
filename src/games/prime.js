@@ -1,4 +1,4 @@
-import getGame, { randomNumber } from '../index.js';
+import getGame, { getRandomNumber } from '../index.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
