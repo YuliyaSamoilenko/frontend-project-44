@@ -1,4 +1,6 @@
-import getGame, { getRandomNumber } from '../index.js';
+import getGame from '../index.js';
+
+import { getRandomNumber } from '../funct.js';
 
 const taskGame = 'What number is missing in the progression?';
 
@@ -11,11 +13,11 @@ const arithmProgression = (number1, quantityNumber, step) => {
   return arithmProgressionArray;
 };
 
-const roundGame = () => {
-  const number1 = Math.abs(getRandomNumber(9) + 1);
-  const step = Math.abs(getRandomNumber(9) + 1);
-  const quantityNumber = Math.abs(getRandomNumber(5) + 5);
-  const unkownMemberIndex = Math.abs(getRandomNumber(quantityNumber - 1));
+const startGame = () => {
+  const number1 = getRandomNumber(1, 10);
+  const step = getRandomNumber(1, 10);
+  const quantityNumber = getRandomNumber(5, 10);
+  const unkownMemberIndex = getRandomNumber(quantityNumber - 1);
   const arithmProgressionArray = arithmProgression(number1, quantityNumber, step);
   const answer = arithmProgressionArray[unkownMemberIndex];
   arithmProgressionArray[unkownMemberIndex] = '..';
@@ -24,5 +26,5 @@ const roundGame = () => {
 };
 
 export default () => {
-  getGame(taskGame, roundGame);
+  getGame(taskGame, startGame);
 };

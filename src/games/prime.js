@@ -1,26 +1,28 @@
-import getGame, { getRandomNumber } from '../index.js';
+import getGame from '../index.js';
+
+import { getRandomNumber } from '../funct.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const calculation = (number) => {
+const isPrime = (number) => {
   if (number <= 1) {
     return false;
   }
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
-const roundGame = () => {
-  const number = Math.abs(getRandomNumber(100));
-  const question = number;
-  const answer = String(calculation(number));
+const startGame = () => {
+  const number = getRandomNumber(1, 100);
+  const question = String(number);
+  const answer = isPrime(number) ? 'yes' : 'no';
   return [question, answer];
 };
 
 export default () => {
-  getGame(taskGame, roundGame);
+  getGame(taskGame, startGame);
 };

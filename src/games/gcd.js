@@ -1,22 +1,24 @@
-import getGame, { getRandomNumber } from '../index.js';
+import getGame from '../index.js';
+
+import { getRandomNumber } from '../funct.js';
 
 const taskGame = 'Find the greatest common divisor of given numbers.';
 
-const calculation = (number1, number2) => {
+const getCalc = (number1, number2) => {
   if (number2 === 0) {
     return number1;
   }
-  return calculation(number2, number1 % number2);
+  return getCalc(number2, number1 % number2);
 };
 
-const roundGame = () => {
-  const number1 = Math.abs(getRandomNumber(100));
-  const number2 = Math.abs(getRandomNumber(100));
+const startGame = () => {
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
-  const answer = calculation(number1, number2);
+  const answer = getCalc(number1, number2);
   return [question, answer];
 };
 
 export default () => {
-  getGame(taskGame, roundGame);
+  getGame(taskGame, startGame);
 };

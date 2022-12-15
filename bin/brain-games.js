@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import name from '../src/cli.js';
+import startGreeting from '../src/cli.js';
 
-name();
+startGreeting();
