@@ -17,17 +17,17 @@
 <h2>Install</h2>
 
 <pre>
-<p>git clone https://github.com/YuliyaSamoilenko/frontend-project-44.git</p>
-<p>cd frontend-project-44</p>
-<p>make install</p>
-<p>npm install</p>
-<p>npm link</p>
+git clone https://github.com/YuliyaSamoilenko/frontend-project-44.git
+cd frontend-project-44
+make install
+npm install
+npm link
 </pre>
 
+<ul>
 <h2>Games</h2>
 
-<h3>Brain-calc<h3>
-
+<li><h3>Brain-calc<h3></li>
 <p>It is necessary to calculate the sum, difference or composition of two numbers</p>
 
 <h4>Starting the game</h4>
@@ -37,7 +37,7 @@
 <h4>Presents</h4>
 <p><a href="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc" target="_blank"><img src="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc.svg" /></a></p>
 
-<h3>Brain-progression<h3>
+<li><h3>Brain-progression<h3></li>
 
 <p>It is necessary to calculate which number is "hidden" in the arithmetic progression</p>
 
@@ -46,9 +46,9 @@
 <pre>brain-progression</pre>
 
 <h4>Presents</h4>
-<p><a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a></p>
+<p display: flex; width=100%><a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a></p>
 
-<h3>Brain-even<h3>
+<li><h3>Brain-even<h3></li>
 
 <p>It is necessary to determine the parity of the number</p>
 
@@ -59,7 +59,7 @@
 <h4>Presents</h4>
 <p><a href="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2" target="_blank"><img src="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2.svg" /></a></p>
 
-<h3>Brain-gcd<h3>
+<li><h3>Brain-gcd<h3></li>
 
 <p>It is necessary to determine the greatest common divisor of two numbers</p>
 
@@ -70,7 +70,7 @@
 <h4>Presents</h4>
 <p><a href="https://asciinema.org/a/544028" target="_blank"><img src="https://asciinema.org/a/544028.svg" /></a></p>
 
-<h3>Brain-prime<h3>
+<li><h3>Brain-prime<h3></li>
 
 <p>It is necessary to determine whether the number is prime</p>
 
@@ -80,3 +80,4 @@
 
 <h4>Presents</h4>
 <p><a href="https://asciinema.org/a/544887" target="_blank"><img src="https://asciinema.org/a/544887.svg" /></a></p>
+</ul>
