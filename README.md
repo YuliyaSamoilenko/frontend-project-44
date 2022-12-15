@@ -15,9 +15,28 @@
 </ul>
 
 <h2>Install</h2>
+<div>
+<pre>git clone https://github.com/YuliyaSamoilenko/frontend-project-44.git</pre>
+<pre>cd frontend-project-44</pre>
+<pre>make install</pre>
+<pre>npm install</pre>
+<pre>npm link</pre>
+</div>
 
-<p>git clone https://github.com/YuliyaSamoilenko/frontend-project-44.git</p>
-<p></p>
+<h2>Games</h2>
+
+<h3>Brain-calc<h3>
+
+<p>It is necessary to calculate the sum, difference or product of two numbers</p>
+
+<h4>Starting the game</h4>
+
+<div>
+<pre>brain-calc</pre>
+</div>
+
+<h4>Presents</h4>
+<script id="asciicast-oTJseoW2fbH4CVEqFRoLa4EJc" src="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc.js" async></script>
 
 [brain-even](https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2)<a href="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2" target="_blank"><img src="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2.svg" /></a>
 
