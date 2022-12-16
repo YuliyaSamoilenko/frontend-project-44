@@ -19,7 +19,7 @@ const startGame = () => {
   const quantityNumber = getRandomNumber(5, 10);
   const unkownMemberIndex = getRandomNumber(quantityNumber - 1);
   const arithmProgressArr = getProgression(number1, quantityNumber, step);
-  const answer = arithmProgresArr[unkownMemberIndex];
+  const answer = arithmProgressArr[unkownMemberIndex];
   arithmProgressArr[unkownMemberIndex] = '..';
   const question = arithmProgressArr.join(' ');
   return [question, answer];
