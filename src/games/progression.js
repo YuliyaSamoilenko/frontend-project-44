@@ -4,9 +4,9 @@ import { getRandomNumber } from '../funct.js';
 
 const taskGame = 'What number is missing in the progression?';
 
-const getProgression = (number1, quantityNumber, step) => {
+const getProgression = (number1, length, step) => {
   const arithmProgressArr = [];
-  for (let i = 0; i < quantityNumber; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     const number = number1 + (step * i);
     arithmProgressArr.push(number);
   }
@@ -14,11 +14,11 @@ const getProgression = (number1, quantityNumber, step) => {
 };
 
 const startGame = () => {
-  const number1 = getRandomNumber(1, 10);
-  const step = getRandomNumber(1, 10);
   const length = getRandomNumber(5, 10);
-  const arithmProgressArr = getProgression(number1, length, step);
   const unkownMemberIndex = getRandomNumber(0, length - 1);
+  const step = getRandomNumber(1, 5);
+  const number1 = getRandomNumber(1, 10);
+  const arithmProgressArr = getProgression(number1, length, step);
   const answer = arithmProgressArr[unkownMemberIndex];
   arithmProgressArr[unkownMemberIndex] = '..';
   const question = arithmProgressArr.join(' ');
