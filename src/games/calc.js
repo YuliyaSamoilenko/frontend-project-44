@@ -1,13 +1,12 @@
 import getGame from '../index.js';
 
-import { getRandomNumber } from '../funct.js';
+import getRandomNumber from '../funct.js';
 
 const taskGame = 'What is the result of the expression?';
 
 const operatorArray = ['+', '-', '*'];
 const index = getRandomNumber(1, operatorArray.length - 1);
 const selectedOperator = operatorArray[index];
-
 
 const calculation = (number1, number2, operator) => {
   switch (operator) {

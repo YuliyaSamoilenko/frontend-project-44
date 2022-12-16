@@ -1,6 +1,6 @@
 import getGame from '../index.js';
 
-import { getRandomNumber } from '../funct.js';
+import getRandomNumber from '../funct.js';
 
 const taskGame = 'What number is missing in the progression?';
 
