@@ -35,7 +35,7 @@ npm link
 <pre>brain-calc</pre>
 
 <h4>Presents</h4>
-<p display: flex; width=100%><a href="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc" target="_blank"><img src="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc.svg" /></a></p>
+<p><a href="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc" target="_blank"><img src="https://asciinema.org/a/oTJseoW2fbH4CVEqFRoLa4EJc.svg" /></a></p>
 
 <li><h3>Brain-progression<h3></li>
 
@@ -46,7 +46,7 @@ npm link
 <pre>brain-progression</pre>
 
 <h4>Presents</h4>
-<p display: flex; width=100%><a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a></p>
+<p><a href="https://asciinema.org/a/544186" target="_blank"><img src="https://asciinema.org/a/544186.svg" /></a></p>
 
 <li><h3>Brain-even<h3></li>
 
@@ -57,7 +57,7 @@ npm link
 <pre>brain-even</pre>
 
 <h4>Presents</h4>
-<p display: flex; width=100%><a href="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2" target="_blank"><img src="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2.svg" /></a></p>
+<p><a href="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2" target="_blank"><img src="https://asciinema.org/a/nYEqyx9YU8JKeEfp7EeAt8au2.svg" /></a></p>
 
 <li><h3>Brain-gcd<h3></li>
 
@@ -68,7 +68,7 @@ npm link
 <pre>brain-gcd</pre>
 
 <h4>Presents</h4>
-<p display: flex; width=100%><a href="https://asciinema.org/a/544028" target="_blank"><img src="https://asciinema.org/a/544028.svg" /></a></p>
+<p><a href="https://asciinema.org/a/546141" target="_blank"><img src="https://asciinema.org/a/546141.svg" /></a></p>
 
 <li><h3>Brain-prime<h3></li>
 
@@ -79,5 +79,5 @@ npm link
 <pre>brain-prime</pre>
 
 <h4>Presents</h4>
-<p display: flex; width=100%><a href="https://asciinema.org/a/544887" target="_blank"><img src="https://asciinema.org/a/544887.svg" /></a></p>
+<p><a href="https://asciinema.org/a/544887" target="_blank"><img src="https://asciinema.org/a/544887.svg" /></a></p>
 </ul>

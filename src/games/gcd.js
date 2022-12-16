@@ -12,8 +12,8 @@ const getCalc = (number1, number2) => {
 };
 
 const startGame = () => {
-  const number1 = getRandomNumber(1, 100);
-  const number2 = getRandomNumber(1, 100);
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
   const question = `${number1} ${number2}`;
   const answer = getCalc(number1, number2);
   return [question, answer];
