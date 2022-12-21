@@ -1,6 +1,6 @@
 import getGame from '../index.js';
 
-import getRandomNumber from '../funct.js';
+import getRandomNumber from '../getRandom';
 
 const taskGame = 'What is the result of the expression?';
 
