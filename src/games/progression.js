@@ -15,7 +15,7 @@ const getProgression = (number1, length, step) => {
 
 const startGame = () => {
   const length = getRandomNumber(5, 10);
-  const unkownMemberIndex = getRandomNumber(0, length - 1);
+  const unkownMemberIndex = getRandomNumber(0, length);
   const step = getRandomNumber(1, 5);
   const number1 = getRandomNumber(1, 10);
   const arithmProgressArr = getProgression(number1, length, step);

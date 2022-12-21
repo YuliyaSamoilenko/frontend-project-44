@@ -18,9 +18,8 @@ const isPrime = (number) => {
 
 const startGame = () => {
   const number = getRandomNumber(1, 100);
-  const question = String(number);
   const answer = isPrime(number) ? 'yes' : 'no';
-  return [question, answer];
+  return [number, answer];
 };
 
 export default () => {
